@@ -1,42 +1,245 @@
+body {
+  background: #f8f9fa;
+}
 
-
-
-
+td {
+  padding: 10px 20px;
+}
+.table_author td,
+th {
+  padding: 5px 20px;
+}
+.Shadow {
+  box-shadow: -1px 3px 31px -4px rgba(34, 60, 80, 0.2);
+}
 .App {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  /* position: relative; */
+  overflow: hidden;
+}
+.active {
+  background: white;
+  padding: 10px 10px;
+  gap: 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: -1px 3px 31px -4px rgba(34, 60, 80, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  /* display: none; */
+}
+.Main {
+  /* width: 80%; */
+  background: #f7f7f7;
+}
+.navlink_dash {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px;
+  font-size: 14px;
+  color: #344767;
+  font-weight: 600;
+  padding: 10px;
+}
+.setting_btn {
+  position: fixed;
+  font-size: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #959fb0;
+  right: 50px;
+  bottom: 50px;
+}
+.linear-gradient {
+  background-image: linear-gradient(310deg, #7928ca 0%, #ff0080 100%);
+}
+.navbar_div {
+  transition: 0.4s all;
+}
+.arrow {
+  transition: 0.4s all;
+}
+.begin_two_btn:hover > .arrow {
+  margin-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.begin_two_bgImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(./assets/img/ivancik.jpg);
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.curved_bg {
+  /* width: 100%;
+  height: 100%; */
+  background-image: url(./assets/img/curved-images/curved14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgColor {
+  background-color: #253c69c4;
+}
+.bgColor2 {
+  background-color: #0f2958d7;
+}
+.profile_curved_img {
+  background-image: url(./assets/img/curved-images/curved0.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+.Blur {
+  filter: blur(4px);
+}
+
+.clippy_path {
+  clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
+  /* width: 600px; */
+  height: 100vh;
+  border-radius: 12px;
+  background-image: url(./assets/img/curved-images/curved6.jpg);
+  background-size: cover;
+}
+
+.sign_up_curved {
+  background-image: url(./assets/img/curved-images/curved14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 12px;
+}
+.sign_up_opacity {
+  background-color: #3a416f86;
+  width: 100%;
+  height: 100%;
+}
+.virtual_reality {
+  background-image: url(./assets/img/vr-bg.jpg);
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vr_curved_bg {
+  background-image: url(./assets/img/curved-images/curved1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.vr_curved_opacity {
+  width: 100%;
+  height: 100%;
+  background: #e706b6cc;
+  border-radius: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .navbar_div {
+    background: #fff;
   }
-  to {
-    transform: rotate(360deg);
+  .App {
+    gap: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .curved_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Column {
+    display: flex !important;
+    gap: 20px;
+    flex-direction: column !important;
+  }
+  .Scroll {
+    overflow-x: scroll !important;
+  }
+  .billiing_column {
+    display: flex;
+    gap: 20px;
+  }
+  .open_sign_in {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .Scroll_table {
+    overflow-x: scroll !important;
+  }
+  .table {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main_navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .Column_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .billiing_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .demo {
+    display: none;
+  }
+  .table {
+    width: 350px;
+  }
+  .clippy_path {
+    display: none;
+  }
+  .open_sign_in {
+    width: 425px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav_input {
+    width: 70px;
+  }
+  .sign_in_form {
+    width: 320px !important;
+  }
+  .open_sign_in {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sign_in_form {
+    width: 260px !important;
+  }
+  .open_sign_in {
+    width: 320px;
   }
 }
